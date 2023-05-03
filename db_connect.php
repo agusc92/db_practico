@@ -35,4 +35,14 @@ function llamadoPrueba(){
 
     return $result;
 }
+
+
+    if(!empty($_POST['deudor'])){
+
+        // $conn = new PDO("mysql:host=".HOST.";dbname=".DBNAME,USERNAME,PASSWORD);
+        // $sentencia = $con -> prepare();
+        print_r($_POST);
+    }
+    
+
 ?>

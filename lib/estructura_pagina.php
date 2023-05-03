@@ -41,7 +41,7 @@
     }
     function mostrarFormulario(){
         echo '
-        <form action="" method="post">
+        <form action="db_connect.php" method="post">
             <h3>formulario agregar</h3>
             <div>
                 <label for="deudor">ingrese nombre</label>
