@@ -31,7 +31,7 @@ function llamadoPrueba(){
     $conn = new PDO("mysql:host=".HOST.";dbname=".DBNAME, USERNAME, PASSWORD);
     $sentencia = $conn -> prepare("SELECT * FROM pagos");
     $sentencia -> execute();
-    $result = $sentencia-> fetchAll(PDO::FETCH_NUM);
+    $result = $sentencia-> fetchAll(PDO::FETCH_GROUP|PDO::FETCH_UNIQUE|PDO::FETCH_ASSOC);
 
     return $result;
 }

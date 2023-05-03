@@ -6,8 +6,9 @@
                 <thead>
                 <tr>
             ';
+            //harcodeo una posicion en el array para acceder a los titulos de las columnas
             foreach($tabla[0] as $campo => $valor){
-                echo "<td>$campo</td>";
+                echo "<th >$campo</th>";
             }
 
                 echo '</tr>
@@ -18,10 +19,11 @@
     function mostrarTbody($tabla){
         echo'
                 <tbody>';
+                //doble forheach para crear las filas y cada una de sus celdas
                 foreach ($tabla as $fila) {
                     echo'<tr>';
                     foreach($fila as $valor){
-                        echo"<td>$valor</td>";
+                        echo"<td >$valor</td>";
                     }
 
 
