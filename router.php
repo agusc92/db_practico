@@ -13,7 +13,15 @@
     mostrarHeader();
     mostrarThead(TAREAS);
     mostrarTbody(TAREAS);
-    mostrarFormulario();
+    if(!empty($_GET['action'])){
+        errorPagos();
+    }
+    if(!empty($_GET['editar'])){
+        mostrarFormularioEditar($_GET);
+     }else{
+        mostrarFormulario();
+     }
+    
     mostrarFooter();
 
 ?>
